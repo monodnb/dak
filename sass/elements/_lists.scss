@@ -1,0 +1,21 @@
+ul {
+    &.selectable {
+        li:hover {
+            background-color: rgba(0, 0, 0, 0.12);
+            &.list-header {
+                background-color: $brand-primary;
+            }
+        }
+    }
+    &.spaced {
+        li {
+            margin: $vertical-margin 0;
+            &:first-child {
+                margin-top: 0;
+            }
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}

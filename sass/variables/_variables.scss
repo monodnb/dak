@@ -1,0 +1,76 @@
+/**
+* queries
+*/
+
+$small-screen-up: 601px !default;
+$medium-screen-up: 993px !default;
+$large-screen-up: 1201px !default;
+$small-screen: 600px !default;
+$medium-screen: 992px !default;
+$large-screen: 1200px !default;
+
+$medium-and-up: "only screen and (min-width : #{$small-screen-up})" !default;
+$large-and-up: "only screen and (min-width : #{$medium-screen-up})" !default;
+$small-and-down: "only screen and (max-width : #{$small-screen})" !default;
+$medium-and-down: "only screen and (max-width : #{$medium-screen})" !default;
+$medium-only: "only screen and (min-width : #{$small-screen-up}) and (max-width : #{$medium-screen})" !default;
+
+
+/*
+*colors
+*/
+
+$background-color: #eeeeee !default;
+$paper-color: #fafafa !default;
+
+$brand-primary: #bc1d26 !default;
+$brand-secondary: #212121 !default;
+
+$text-primary: #212121 !default;
+$text-secondary: #757575 !default;
+$text-hint: #bdbdbd !default;
+
+$disabled-color: #e0e0e0;
+
+
+/**
+*typography
+*/
+
+$roboto-font-path: "font/roboto/" !default;
+$noto-font-path: "font/noto-sans/" !default;
+$icons-font-path: "font/material-design-icons/" !default;
+
+$thin: 100 !default;
+$light: 300 !default;
+$regular: 400 !default;
+$medium: 500 !default;
+$bold: 700 !default;
+$black: 900 !default;
+
+
+/**
+* metrics and keylines
+*/
+
+/*** mobile ***/
+$max-width: 1152px !default;
+$vertical-keyline: 16px !default;
+$horizontal-margin: 16px !default;
+$fixed-increment: 32px !default;
+$vertical-margin: 8px !default;
+$icon-bounding: 3px !default;
+
+/**
+* toolbar
+*/
+
+/*** mobile ***/
+$toolbar-height: 64px !default;
+$toolbar-height-extended: 128px !default;
+
+/**
+* layout
+*/
+
+$cols-num: 12 !default;

@@ -1,0 +1,68 @@
+.lines-list {
+    @extend .paper;
+    padding: 0;
+}
+
+li {
+    @include faster-transition(background-color, opacity);
+    position: relative;
+    &:last-child {
+        border-bottom: none;
+    }
+    .avatar, .supporting-text, .action {
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .avatar {
+        opacity: .56;
+        width: 24px;
+        height: 24px;
+    }
+    .supporting-text {
+        width: auto;
+        display: inline-block;
+        vertical-align: middle;
+        padding: $horizontal-margin ($horizontal-margin / 2);
+    }
+    .list-item-title {
+        @extend .subhead;
+        @extend .black54;
+        font-weight: normal;
+        margin: 0;
+        max-width: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .action {
+        position: relative;
+        height: 24px;
+        top: 50%;
+        transform: translateY(-50%);
+        text-align: right;
+        float: right;
+        @extend .black54;
+    }
+    &.activated {
+        .content {
+            color: rgba(255, 255, 255, 0.7);
+        }
+    }
+}
+
+li {
+    &.single-line {
+        padding: 0 $horizontal-margin;
+        height: 6 * $vertical-margin;
+    }
+    &.two-line {
+        padding: $horizontal-margin;
+        height: 8 * $vertical-margin;
+    }
+    &.three-line {
+        padding: $horizontal-margin;
+        height: 10 * $vertical-margin;
+        .action {
+            margin: (2 * $vertical-margin) 0;
+        }
+    }
+}

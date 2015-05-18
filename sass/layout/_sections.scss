@@ -1,0 +1,60 @@
+#footer {
+    background-color: $brand-secondary;
+    .footer-wrapper {
+        max-width: $max-width;
+    }
+    .linkuri-utile {
+        .col {
+            border-left: 1px solid rgba(255, 255, 255, 0.12);
+            &:first-child {
+                border: none;
+            }
+        }
+        ul, li {
+            background-color: transparent;
+        }
+        li {
+            max-height: $fixed-increment;
+        }
+        .list-header {
+            box-shadow: 0 0;
+            .list-title {
+                @extend .subhead;
+                color: $brand-primary;
+            }
+        }
+        .single-line {
+            .list-item-title {
+                @extend .b1;
+                @extend .white54;
+                font-weight: $light;
+            }
+        }
+    }
+    .parteneri {
+        margin-top: $vertical-keyline;
+        .parteneri-title {
+            text-align: center;
+            @extend .b2;
+            @extend .white54;
+            text-transform: uppercase;
+        }
+        .parteneri-icons {
+            .grid-list {
+                background-color: transparent;
+                .cell {
+                    border: none;
+                    padding: 2px;
+                }
+            }
+        }
+    }
+    .copyright {
+        margin-top: $vertical-keyline;
+        margin-bottom: 3*$vertical-keyline;
+        text-align: center;
+        @extend .caption;
+        color: rgba(255,255,255,.24);
+        font-weight: $light;
+    }
+}

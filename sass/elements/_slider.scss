@@ -1,0 +1,23 @@
+.slider-wrapper {
+    @extend .paper;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+@media #{$medium-and-up} {
+    .slider-wrapper {
+        height: 384px;
+        img {
+            position: absolute;
+            margin: auto;
+            min-height: 100%;
+            width: auto;
+            max-width: none;
+            min-width: 100%;
+            left: -50%;
+            right: 0;
+            transform: translateX(25%);
+        }
+    }
+}

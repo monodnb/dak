@@ -1,0 +1,47 @@
+#promise {
+    margin-top: 5 * $vertical-margin;
+    margin-bottom: 5 * $vertical-margin;
+    text-align: center;
+    position: relative;
+    .divider {
+        .divider-text {
+            @extend .paper;
+            @extend .subhead;
+            @extend .black54;
+            position: relative;
+            height: $fixed-increment;
+            max-height: $fixed-increment;
+            top: -$fixed-increment / 2;
+            font-weight: $bold;
+            text-transform: uppercase;
+            padding: $vertical-margin $vertical-keyline;
+            text-align: center;
+        }
+    }
+    .promises {
+        margin-bottom: 5 * $vertical-margin;
+        opacity: .54;
+    }
+    .promise{
+        text-align: center;
+        padding: $horizontal-margin/2;
+        img, span, p{
+            display: block;
+        }
+        img{
+            max-width: 2*$fixed-increment;
+            margin: auto;
+        }
+        span{
+            @extend .subhead;
+            @extend .black87;
+            font-weight: $medium;
+            text-transform: uppercase;
+        }
+        p{
+            @extend .black54;
+            padding: 0;
+            margin: 0;
+        }
+    }
+}

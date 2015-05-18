@@ -1,0 +1,20 @@
+.list-header {
+    @extend .single-line;
+    background-color: $brand-secondary;
+    box-shadow: 0 6px $brand-primary;
+    position: relative;
+    z-index: 1;
+    .list-title {
+        @extend .subhead;
+        margin: 0;
+        max-width: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: $medium;
+    }
+    .action {
+        @extend .white87;
+    }
+}

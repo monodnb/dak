@@ -1,0 +1,16 @@
+.paper{
+    position: relative;
+    background-color: $paper-color;
+    border-radius: 2px;
+    margin: $vertical-margin;
+    overflow: hidden;
+    transition: box-shadow 200ms,border 200ms;
+    &.resting{
+        &:hover, &:focus{
+            @extend .raised;
+        }
+        &:active{
+            @extend .floating;
+        }
+    }
+}

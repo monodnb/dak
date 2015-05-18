@@ -1,0 +1,77 @@
+.tile {
+    position: relative;
+    overflow: hidden;
+    background-color: #fff;
+    @extend .resting;
+    .rich-media {
+        position: relative;
+        overflow: hidden;
+        padding: $vertical-margin;
+        & > img {
+            position: relative;
+            width: 100%;
+        }
+    }
+    .tile-info{
+        width: 24px;
+        position: absolute;
+        top:0;
+        right: $vertical-keyline;
+    }
+    .primary-text {
+        padding: $vertical-margin $horizontal-margin;
+        .tile-title {
+            @extend .subhead;
+            @extend .black87;
+            font-weight: $medium;
+            line-height: normal;
+            white-space: nowrap;
+            overflow: hidden !important;
+            text-overflow: ellipsis;
+        }
+        .tile-subtitle {
+            @extend .b1;
+            @extend .black54;
+            line-height: normal;
+            white-space: nowrap;
+            overflow: hidden !important;
+            text-overflow: ellipsis;
+        }
+    }
+    .price-tag {
+        position: relative;
+        padding: 0 $horizontal-margin;
+        height: $fixed-increment;
+        max-height: $fixed-increment;
+        .price {
+            display: block;
+            @extend .title;
+            @extend .black87;
+            font-weight: $bold;
+            padding: 0;
+            margin: 0;
+        }
+        .old-price {
+            display: block;
+            @extend .caption;
+            padding: 0;
+            margin: 0;
+            text-decoration: line-through;
+        }
+    }
+    .rating-area {
+			width: 100%;
+			padding:0 $horizontal-margin;
+			color: #ffffff;
+			i {
+                @extend .subhead;
+                color: $brand-primary;
+			}
+    }
+    .supplemental-actions {
+        padding: $vertical-keyline;
+        position: relative;
+        opacity: .87;
+        text-align: center;
+    }
+}

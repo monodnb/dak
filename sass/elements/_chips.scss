@@ -1,0 +1,64 @@
+.chip {
+    position: relative;
+    overflow: hidden;
+    background-color: #fff;
+    @extend .resting;
+    max-height: 4*$fixed-increment;
+    .rich-media {
+        position: relative;
+        overflow: hidden;
+        padding: $vertical-margin;
+        display: inline-block;
+        float: left;
+        width: 50%;
+    }
+    .info-area {
+        position: relative;
+        overflow: hidden;
+        padding: $vertical-margin;
+        display: inline-block;
+        float: left;
+        width: 50%;
+        .primary-text {
+            padding: $vertical-margin $horizontal-margin;
+            .chip-title {
+                @extend .subhead;
+                @extend .black87;
+                font-weight: $medium;
+                line-height: normal;
+                white-space: nowrap;
+                overflow: hidden !important;
+                text-overflow: ellipsis;
+            }
+            .chip-subtitle {
+                @extend .b1;
+                @extend .black54;
+                line-height: normal;
+                white-space: nowrap;
+                overflow: hidden !important;
+                text-overflow: ellipsis;
+            }
+        }
+        .price-tag {
+            position: relative;
+            padding: 0 $horizontal-margin;
+            height: $fixed-increment;
+            max-height: $fixed-increment;
+            .price {
+                display: block;
+                @extend .title;
+                @extend .black87;
+                font-weight: $bold;
+                padding: 0;
+                margin: 0;
+            }
+            .old-price {
+                display: block;
+                @extend .caption;
+                padding: 0;
+                margin: 0;
+                text-decoration: line-through;
+            }
+        }
+    }
+}

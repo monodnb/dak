@@ -1,0 +1,22 @@
+.logo-carousel {
+    background-color: #fafafa;
+    .grid-list {
+        max-width: $max-width;
+        margin: auto;
+        background-color: transparent;
+        .cell {
+            border: none;
+            img {
+                margin: auto;
+                width: 80%;
+                filter: grayscale(1);
+                opacity: .54;
+                transition: all .3s ease;
+                &:hover{
+                    filter: grayscale(0);
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,26 @@
+.animated-shadow {
+    -webkit-transition: box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.flat {
+    box-shadow: 0 0;
+}
+
+.resting {
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+}
+
+.raised {
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.18);
+}
+
+.floating {
+    @extend .raised;
+}
+
+@media #{$medium-and-up} {
+    .floating {
+        box-shadow:  0 12px 20px 0 rgba(0, 0, 0, 0.20);
+    }
+}

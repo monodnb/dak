@@ -1,0 +1,28 @@
+.spacer{
+	@extend .row;
+	position: relative;
+	height: 100vh;
+	width:100vw;
+}
+
+.divider{
+	position:relative;
+	margin: $vertical-margin 0;
+	height: 1px;
+    background-color: rgba(0,0,0,.12);
+    &.nomargin{
+        margin: 0;
+    }
+	&.full-bleed{
+	}
+	&.left-inset{
+		margin-right: $horizontal-margin;
+	}
+	&.right-inset{
+		margin-left: $horizontal-margin;
+	}
+    &.center-inset{
+        margin-left: $horizontal-margin;
+        margin-right: $horizontal-margin;
+    }
+}
