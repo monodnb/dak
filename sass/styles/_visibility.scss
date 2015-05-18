@@ -1,0 +1,15 @@
+.hide-on-small, .hide-on-medium{
+    display: none;
+}
+
+@media #{$medium-and-up} {
+    .hide-on-small{
+        display: block;
+    }
+}
+
+@media #{$large-and-up} {
+    .hide-on-medium{
+        display: block;
+    }
+}

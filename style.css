@@ -203,6 +203,17 @@ td, th {
 /*--------------------------------------------------------------
 # Styles
 --------------------------------------------------------------*/
+.hide-on-small, .hide-on-medium {
+  display: none; }
+
+@media only screen and (min-width : 601px) {
+  .hide-on-small {
+    display: block; } }
+
+@media only screen and (min-width : 993px) {
+  .hide-on-medium {
+    display: block; } }
+
 .animated-shadow {
   -webkit-transition: box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);
   transition: box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1); }

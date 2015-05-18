@@ -26,7 +26,7 @@
     
 	<footer id="footer">
 	    <section class="row footer-wrapper">
-            <div class="row linkuri-utile">
+            <div class="row linkuri-utile hide-on-medium">
                 <div class="col s6 m6 l3">
                     <ul class="lines-list">
                         <li class="list-header">
