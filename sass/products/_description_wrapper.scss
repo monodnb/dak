@@ -1,0 +1,19 @@
+#description-wrapper {
+    ul {
+        margin: $vertical-margin 0;
+        background-color: #fff;
+    }
+    p{
+        @extend .b1;
+        @extend .black54;
+        padding: $vertical-keyline;
+        margin: 0;
+    }
+}
+
+#similar-products{
+    ul {
+        margin: $vertical-margin 0;
+    }
+    margin-bottom: 4*$vertical-keyline;
+}

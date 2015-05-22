@@ -19,7 +19,7 @@ li {
         height: 24px;
     }
     .supporting-text {
-        width: auto;
+        max-width: calc(100% - 56px);
         display: inline-block;
         vertical-align: middle;
         padding: $horizontal-margin ($horizontal-margin / 2);
@@ -53,6 +53,9 @@ li {
     &.single-line {
         padding: 0 $horizontal-margin;
         height: 6 * $vertical-margin;
+        .list-item-title{
+            white-space: nowrap;
+        }
     }
     &.two-line {
         padding: $horizontal-margin;

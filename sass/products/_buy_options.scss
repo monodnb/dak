@@ -1,0 +1,118 @@
+.buy-options {
+    flex: 1;
+    .product-info {
+        width: 24px;
+        position: absolute;
+        top: $vertical-keyline;
+        right: $vertical-keyline;
+    }
+    .primary-text {
+        padding: $vertical-margin $horizontal-margin;
+        .product-title {
+            @extend .headline;
+            @extend .black87;
+            font-weight: $bold;
+            line-height: normal;
+            white-space: nowrap;
+            overflow: hidden !important;
+            text-overflow: ellipsis;
+        }
+        .product-subtitle {
+            @extend .subhead;
+            @extend .black54;
+            font-weight: $medium;
+            line-height: normal;
+            white-space: nowrap;
+            overflow: hidden !important;
+            text-overflow: ellipsis;
+        }
+        .product-stock {
+            @extend .b1;
+            @extend .black54;
+            padding: 0;
+            margin: 0;
+        }
+    }
+    .product-price-tag {
+        position: relative;
+        padding: 0 $horizontal-margin;
+        height: $fixed-increment;
+        max-height: $fixed-increment;
+        .product-price {
+            display: inline-block;
+            @extend .title;
+            color: $brand-primary;
+            font-weight: $bold;
+            padding: 0;
+            margin: 0;
+        }
+        .product-old-price {
+            display: inline-block;
+            @extend .b1;
+            @extend .black54;
+            padding: 0;
+            margin: 0;
+            margin-left: $horizontal-margin;
+            text-decoration: line-through;
+        }
+    }
+    .product-rating-area {
+        width: 100%;
+        padding: 0 $horizontal-margin;
+        margin: $vertical-margin 0;
+        color: #ffffff;
+        i {
+            @extend .subhead;
+            color: $brand-primary;
+        }
+        a {
+            @extend .b1;
+            @extend .black54;
+            position: relative;
+            display: block;
+            line-height: normal;
+            text-decoration: none;
+        }
+    }
+    .product-add-to-cart {
+        padding: $vertical-keyline;
+        position: relative;
+        opacity: .87;
+        text-align: center;
+        select {
+            position: relative;
+            background-color: rgba(0, 0, 0, 0.06);
+            border: none;
+            border-radius: 0;
+            outline: none;
+            min-width: 128px;
+            height: $fixed-increment;
+            line-height: $fixed-increment;
+            box-shadow: none;
+            box-sizing: border-box;
+            padding: 0 0 0 $horizontal-margin;
+            &:focus {
+                outline: none;
+            }
+        }
+        input {
+            position: relative;
+            background-color: rgba(0, 0, 0, 0.06);
+            border: none;
+            border-radius: 0;
+            outline: none;
+            max-width: 48px;
+            height: $fixed-increment;
+            line-height: $fixed-increment;
+            box-shadow: none;
+            box-sizing: border-box;
+            padding: 0 0 0 $horizontal-margin;
+            &:focus {
+                outline: none;
+            }
+        }
+        button{
+            margin: 0;
+        }
+    }
+}

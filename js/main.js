@@ -18,7 +18,9 @@
                 thisWidth = $this.outerWidth();
             $this.css("height", (0.75*thisWidth));
         }).ripple();
-        $button.ripple();
+        $button.ripple({
+            rippleColor: "rgba(255, 255, 255, 0.4)"
+        });
 
 		// Initial setup
 

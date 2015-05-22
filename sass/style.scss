@@ -36,6 +36,9 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Forms
     #Fields
 
+#Products
+    #Product Gallery
+
 --------------------------------------------------------------*/
 @import "variables/variables";
 @import "mixins/mixins";
@@ -65,3 +68,9 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Forms
 --------------------------------------------------------------*/
 @import "forms/fields";
+
+/*--------------------------------------------------------------
+# Products
+--------------------------------------------------------------*/
+@import "products/product_wrapper";
+@import "products/description_wrapper";

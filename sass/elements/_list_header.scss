@@ -7,7 +7,8 @@
     .list-title {
         @extend .subhead;
         margin: 0;
-        max-width: 100%;
+        width: auto;
+        white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
         color: #fff;

@@ -35,6 +35,9 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Forms
     #Fields
 
+#Products
+    #Product Gallery
+
 --------------------------------------------------------------*/
 /**
 * queries
@@ -224,11 +227,11 @@ td, th {
 .resting, .chip, .tile {
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12); }
 
-.raised, .floating, .paper.resting:active, .resting.lines-list:active, .lines-list.chip:active, .lines-list.tile:active, .resting.grid-list:active, .grid-list.chip:active, .grid-list.tile:active, .paper.chip:active, .chip.slider-wrapper:active, #promise .divider .chip.divider-text:active, .paper.tile:active, .tile.slider-wrapper:active, #promise .divider .tile.divider-text:active, .resting.slider-wrapper:active, #promise .divider .resting.divider-text:active, button:active, button.colored:active, .paper.resting:hover, .resting.lines-list:hover, .lines-list.chip:hover, .lines-list.tile:hover, .resting.grid-list:hover, .grid-list.chip:hover, .grid-list.tile:hover, .paper.chip:hover, .chip.slider-wrapper:hover, #promise .divider .chip.divider-text:hover, .paper.tile:hover, .tile.slider-wrapper:hover, #promise .divider .tile.divider-text:hover, .resting.slider-wrapper:hover, #promise .divider .resting.divider-text:hover, .paper.resting:focus, .resting.lines-list:focus, .lines-list.chip:focus, .lines-list.tile:focus, .resting.grid-list:focus, .grid-list.chip:focus, .grid-list.tile:focus, .paper.chip:focus, .chip.slider-wrapper:focus, #promise .divider .chip.divider-text:focus, .paper.tile:focus, .tile.slider-wrapper:focus, #promise .divider .tile.divider-text:focus, .resting.slider-wrapper:focus, #promise .divider .resting.divider-text:focus, button:hover, button:focus, button.colored:hover {
+.raised, .floating, .paper.resting:active, .resting.lines-list:active, .lines-list.chip:active, .lines-list.tile:active, .resting.grid-list:active, .grid-list.chip:active, .grid-list.tile:active, .paper.chip:active, .chip.slider-wrapper:active, #promise .divider .chip.divider-text:active, #product-wrapper .chip.product-gallery:active, #product-wrapper .chip.buy-options:active, .paper.tile:active, .tile.slider-wrapper:active, #promise .divider .tile.divider-text:active, #product-wrapper .tile.product-gallery:active, #product-wrapper .tile.buy-options:active, .resting.slider-wrapper:active, #promise .divider .resting.divider-text:active, #product-wrapper .resting.product-gallery:active, #product-wrapper .resting.buy-options:active, button:active, button.colored:active, .paper.resting:hover, .resting.lines-list:hover, .lines-list.chip:hover, .lines-list.tile:hover, .resting.grid-list:hover, .grid-list.chip:hover, .grid-list.tile:hover, .paper.chip:hover, .chip.slider-wrapper:hover, #promise .divider .chip.divider-text:hover, #product-wrapper .chip.product-gallery:hover, #product-wrapper .chip.buy-options:hover, .paper.tile:hover, .tile.slider-wrapper:hover, #promise .divider .tile.divider-text:hover, #product-wrapper .tile.product-gallery:hover, #product-wrapper .tile.buy-options:hover, .resting.slider-wrapper:hover, #promise .divider .resting.divider-text:hover, #product-wrapper .resting.product-gallery:hover, #product-wrapper .resting.buy-options:hover, .paper.resting:focus, .resting.lines-list:focus, .lines-list.chip:focus, .lines-list.tile:focus, .resting.grid-list:focus, .grid-list.chip:focus, .grid-list.tile:focus, .paper.chip:focus, .chip.slider-wrapper:focus, #promise .divider .chip.divider-text:focus, #product-wrapper .chip.product-gallery:focus, #product-wrapper .chip.buy-options:focus, .paper.tile:focus, .tile.slider-wrapper:focus, #promise .divider .tile.divider-text:focus, #product-wrapper .tile.product-gallery:focus, #product-wrapper .tile.buy-options:focus, .resting.slider-wrapper:focus, #promise .divider .resting.divider-text:focus, #product-wrapper .resting.product-gallery:focus, #product-wrapper .resting.buy-options:focus, button:hover, button:focus, button.colored:hover {
   box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.18); }
 
 @media only screen and (min-width : 601px) {
-  .floating, .paper.resting:active, .resting.lines-list:active, .lines-list.chip:active, .lines-list.tile:active, .resting.grid-list:active, .grid-list.chip:active, .grid-list.tile:active, .paper.chip:active, .chip.slider-wrapper:active, #promise .divider .chip.divider-text:active, .paper.tile:active, .tile.slider-wrapper:active, #promise .divider .tile.divider-text:active, .resting.slider-wrapper:active, #promise .divider .resting.divider-text:active, button:active, button.colored:active {
+  .floating, .paper.resting:active, .resting.lines-list:active, .lines-list.chip:active, .lines-list.tile:active, .resting.grid-list:active, .grid-list.chip:active, .grid-list.tile:active, .paper.chip:active, .chip.slider-wrapper:active, #promise .divider .chip.divider-text:active, #product-wrapper .chip.product-gallery:active, #product-wrapper .chip.buy-options:active, .paper.tile:active, .tile.slider-wrapper:active, #promise .divider .tile.divider-text:active, #product-wrapper .tile.product-gallery:active, #product-wrapper .tile.buy-options:active, .resting.slider-wrapper:active, #promise .divider .resting.divider-text:active, #product-wrapper .resting.product-gallery:active, #product-wrapper .resting.buy-options:active, button:active, button.colored:active {
     box-shadow: 0 12px 20px 0 rgba(0, 0, 0, 0.2); } }
 
 html {
@@ -237,6 +240,9 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
   -webkit-tap-highlight-color: transparent; }
+
+*:focus {
+  outline: none; }
 
 body {
   background-color: #eeeeee; }
@@ -312,11 +318,11 @@ img, video {
   z-index: 100000;
   /* Above WP toolbar. */ }
 
-.black54, .d4, .d3, .d2, .d1, .subhead, #footer .linkuri-utile .list-header .list-title, li .list-item-title, .list-header .list-title, .chip .info-area .primary-text .chip-title, .tile .primary-text .tile-title, .tile .rating-area i, #promise .divider .divider-text, #promise .promise span, .caption, #footer .copyright, .chip .info-area .price-tag .old-price, .tile .price-tag .old-price, li .action, .chip .info-area .primary-text .chip-subtitle, .tile .primary-text .tile-subtitle, #promise .promise p {
+.black54, .d4, .d3, .d2, .d1, .subhead, #footer .linkuri-utile .list-header .list-title, li .list-item-title, .list-header .list-title, .chip .info-area .primary-text .chip-title, .tile .primary-text .tile-title, .tile .rating-area i, #promise .divider .divider-text, #promise .promise span, .buy-options .primary-text .product-subtitle, .buy-options .product-rating-area i, .caption, #footer .copyright, .chip .info-area .price-tag .old-price, .tile .price-tag .old-price, li .action, #promise .promise p, .buy-options .primary-text .product-stock, .buy-options .product-price-tag .product-old-price, .buy-options .product-rating-area a, #description-wrapper p {
   color: #757575;
   color: rgba(0, 0, 0, 0.54); }
 
-.black87, html, .chip .info-area .primary-text .chip-title, .chip .info-area .price-tag .price, .tile .primary-text .tile-title, .tile .price-tag .price, #promise .promise span {
+.black87, html, .chip .info-area .primary-text .chip-title, .chip .info-area .price-tag .price, .tile .primary-text .tile-title, .tile .price-tag .price, #promise .promise span, .buy-options .primary-text .product-title {
   color: #212121;
   color: rgba(0, 0, 0, 0.87); }
 
@@ -364,15 +370,15 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 2.43rem;
   line-height: 1.18; }
 
-.headline, .card .rich-media > .title, .card .chip .info-area .price-tag .rich-media > .price, .chip .info-area .price-tag .card .rich-media > .price, .card .tile .price-tag .rich-media > .price, .tile .price-tag .card .rich-media > .price, .card .primary-text .title, .card .primary-text .chip .info-area .price-tag .price, .chip .info-area .price-tag .card .primary-text .price, .card .primary-text .tile .price-tag .price, .tile .price-tag .card .primary-text .price {
+.headline, .card .rich-media > .title, .card .chip .info-area .price-tag .rich-media > .price, .chip .info-area .price-tag .card .rich-media > .price, .card .tile .price-tag .rich-media > .price, .tile .price-tag .card .rich-media > .price, .card .buy-options .product-price-tag .rich-media > .product-price, .buy-options .product-price-tag .card .rich-media > .product-price, .card .primary-text .title, .card .primary-text .chip .info-area .price-tag .price, .chip .info-area .price-tag .card .primary-text .price, .card .primary-text .tile .price-tag .price, .tile .price-tag .card .primary-text .price, .card .primary-text .buy-options .product-price-tag .product-price, .buy-options .product-price-tag .card .primary-text .product-price, .buy-options .primary-text .product-title {
   font-size: 1.71rem;
   line-height: 1.33; }
 
-.title, .chip .info-area .price-tag .price, .tile .price-tag .price {
+.title, .chip .info-area .price-tag .price, .tile .price-tag .price, .buy-options .product-price-tag .product-price {
   font-size: 1.43rem;
   font-weight: 500; }
 
-.subhead, #footer .linkuri-utile .list-header .list-title, li .list-item-title, .list-header .list-title, .chip .info-area .primary-text .chip-title, .tile .primary-text .tile-title, .tile .rating-area i, #promise .divider .divider-text, #promise .promise span {
+.subhead, #footer .linkuri-utile .list-header .list-title, li .list-item-title, .list-header .list-title, .chip .info-area .primary-text .chip-title, .tile .primary-text .tile-title, .tile .rating-area i, #promise .divider .divider-text, #promise .promise span, .buy-options .primary-text .product-subtitle, .buy-options .product-rating-area i {
   font-size: 1.14rem;
   line-height: 1.5; }
 
@@ -381,7 +387,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.72;
   font-weight: 500; }
 
-.b1, #footer .linkuri-utile .single-line .list-item-title, #footer .linkuri-utile .list-header .list-item-title, .account-wrapper button, .chip .info-area .primary-text .chip-subtitle, .tile .primary-text .tile-subtitle, .card .supporting-text p {
+.b1, #footer .linkuri-utile .single-line .list-item-title, #footer .linkuri-utile .list-header .list-item-title, .account-wrapper button, .chip .info-area .primary-text .chip-subtitle, .tile .primary-text .tile-subtitle, .card .supporting-text p, .buy-options .primary-text .product-stock, .buy-options .product-price-tag .product-old-price, .buy-options .product-rating-area a, #description-wrapper p {
   font-size: 1rem;
   line-height: 1.42; }
 
@@ -2874,7 +2880,7 @@ small {
 # Layout
 --------------------------------------------------------------*/
 #content-area {
-  max-width: 1152px;
+  max-width: 1000px;
   margin: auto; }
 
 .row, .spacer {
@@ -3109,7 +3115,7 @@ small {
 #footer {
   background-color: #212121; }
   #footer .footer-wrapper {
-    max-width: 1152px; }
+    max-width: 1000px; }
   #footer .linkuri-utile .col {
     border-left: 1px solid rgba(255, 255, 255, 0.12); }
     #footer .linkuri-utile .col:first-child {
@@ -3144,7 +3150,7 @@ small {
 /*--------------------------------------------------------------
 # Elements
 --------------------------------------------------------------*/
-.paper, .lines-list, .grid-list, .slider-wrapper, #promise .divider .divider-text {
+.paper, .lines-list, .grid-list, .slider-wrapper, #promise .divider .divider-text, #product-wrapper .product-gallery, #product-wrapper .buy-options {
   position: relative;
   background-color: #fafafa;
   border-radius: 2px;
@@ -3182,7 +3188,7 @@ small {
     height: 128px; }
 
 .header {
-  max-width: 1152px; }
+  max-width: 1000px; }
 
 .top-row {
   height: 50%; }
@@ -3319,6 +3325,9 @@ button {
       box-shadow: 0 0; }
     button.flat:active {
       box-shadow: 0 0; }
+    button.flat.colored {
+      background-color: #bc1d26;
+      color: #fff; }
 
 ul.selectable li:hover {
   background-color: rgba(0, 0, 0, 0.12); }
@@ -3348,7 +3357,7 @@ li {
     width: 24px;
     height: 24px; }
   li .supporting-text {
-    width: auto;
+    max-width: calc(100% - 56px);
     display: inline-block;
     vertical-align: middle;
     padding: 16px 8px; }
@@ -3373,6 +3382,8 @@ li {
 li.single-line, li.list-header {
   padding: 0 16px;
   height: 48px; }
+  li.single-line .list-item-title, li.list-header .list-item-title {
+    white-space: nowrap; }
 li.two-line {
   padding: 16px;
   height: 64px; }
@@ -3622,7 +3633,8 @@ li.three-line {
   z-index: 1; }
   .list-header .list-title {
     margin: 0;
-    max-width: 100%;
+    width: auto;
+    white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
     color: #fff;
@@ -3691,7 +3703,7 @@ li.three-line {
   .tile .tile-info {
     width: 24px;
     position: absolute;
-    top: 0;
+    top: 16px;
     right: 16px; }
   .tile .primary-text {
     padding: 8px 16px; }
@@ -3758,13 +3770,13 @@ li.three-line {
       overflow: hidden;
       border-radius: 50%;
       margin-right: 16px; }
-    .card .optional-header .title, .card .optional-header .chip .info-area .price-tag .price, .chip .info-area .price-tag .card .optional-header .price, .card .optional-header .tile .price-tag .price, .tile .price-tag .card .optional-header .price {
+    .card .optional-header .title, .card .optional-header .chip .info-area .price-tag .price, .chip .info-area .price-tag .card .optional-header .price, .card .optional-header .tile .price-tag .price, .tile .price-tag .card .optional-header .price, .card .optional-header .buy-options .product-price-tag .product-price, .buy-options .product-price-tag .card .optional-header .product-price {
       font-size: 1.14rem;
       line-height: 1.2;
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis; }
-    .card .optional-header .subhead, .card .optional-header #footer .linkuri-utile .list-header .list-title, #footer .linkuri-utile .list-header .card .optional-header .list-title, .card .optional-header li .list-item-title, li .card .optional-header .list-item-title, .card .optional-header .list-header .list-title, .list-header .card .optional-header .list-title, .card .optional-header .chip .info-area .primary-text .chip-title, .chip .info-area .primary-text .card .optional-header .chip-title, .card .optional-header .tile .primary-text .tile-title, .tile .primary-text .card .optional-header .tile-title, .card .optional-header .tile .rating-area i, .tile .rating-area .card .optional-header i, .card .optional-header #promise .divider .divider-text, #promise .divider .card .optional-header .divider-text, .card .optional-header #promise .promise span, #promise .promise .card .optional-header span {
+    .card .optional-header .subhead, .card .optional-header #footer .linkuri-utile .list-header .list-title, #footer .linkuri-utile .list-header .card .optional-header .list-title, .card .optional-header li .list-item-title, li .card .optional-header .list-item-title, .card .optional-header .list-header .list-title, .list-header .card .optional-header .list-title, .card .optional-header .chip .info-area .primary-text .chip-title, .chip .info-area .primary-text .card .optional-header .chip-title, .card .optional-header .tile .primary-text .tile-title, .tile .primary-text .card .optional-header .tile-title, .card .optional-header .tile .rating-area i, .tile .rating-area .card .optional-header i, .card .optional-header #promise .divider .divider-text, #promise .divider .card .optional-header .divider-text, .card .optional-header #promise .promise span, #promise .promise .card .optional-header span, .card .optional-header .buy-options .primary-text .product-subtitle, .buy-options .primary-text .card .optional-header .product-subtitle, .card .optional-header .buy-options .product-rating-area i, .buy-options .product-rating-area .card .optional-header i {
       font-weight: 500;
       font-size: 1rem;
       white-space: nowrap;
@@ -3782,7 +3794,7 @@ li.three-line {
     .card .rich-media > img {
       position: relative;
       width: 100%; }
-    .card .rich-media > .title, .card .chip .info-area .price-tag .rich-media > .price, .chip .info-area .price-tag .card .rich-media > .price, .card .tile .price-tag .rich-media > .price, .tile .price-tag .card .rich-media > .price {
+    .card .rich-media > .title, .card .chip .info-area .price-tag .rich-media > .price, .chip .info-area .price-tag .card .rich-media > .price, .card .tile .price-tag .rich-media > .price, .tile .price-tag .card .rich-media > .price, .card .buy-options .product-price-tag .rich-media > .product-price, .buy-options .product-price-tag .card .rich-media > .product-price {
       line-height: normal;
       position: absolute;
       color: #fff;
@@ -3824,12 +3836,12 @@ li.three-line {
     padding: 16px;
     padding-top: 48px;
     max-height: 160px; }
-    .card .primary-text .title, .card .primary-text .chip .info-area .price-tag .price, .chip .info-area .price-tag .card .primary-text .price, .card .primary-text .tile .price-tag .price, .tile .price-tag .card .primary-text .price {
+    .card .primary-text .title, .card .primary-text .chip .info-area .price-tag .price, .chip .info-area .price-tag .card .primary-text .price, .card .primary-text .tile .price-tag .price, .tile .price-tag .card .primary-text .price, .card .primary-text .buy-options .product-price-tag .product-price, .buy-options .product-price-tag .card .primary-text .product-price {
       line-height: normal;
       white-space: nowrap;
       overflow: hidden !important;
       text-overflow: ellipsis; }
-    .card .primary-text .subhead, .card .primary-text #footer .linkuri-utile .list-header .list-title, #footer .linkuri-utile .list-header .card .primary-text .list-title, .card .primary-text li .list-item-title, li .card .primary-text .list-item-title, .card .primary-text .list-header .list-title, .list-header .card .primary-text .list-title, .card .chip .info-area .primary-text .chip-title, .chip .info-area .card .primary-text .chip-title, .card .tile .primary-text .tile-title, .tile .card .primary-text .tile-title, .card .primary-text .tile .rating-area i, .tile .rating-area .card .primary-text i, .card .primary-text #promise .divider .divider-text, #promise .divider .card .primary-text .divider-text, .card .primary-text #promise .promise span, #promise .promise .card .primary-text span {
+    .card .primary-text .subhead, .card .primary-text #footer .linkuri-utile .list-header .list-title, #footer .linkuri-utile .list-header .card .primary-text .list-title, .card .primary-text li .list-item-title, li .card .primary-text .list-item-title, .card .primary-text .list-header .list-title, .list-header .card .primary-text .list-title, .card .chip .info-area .primary-text .chip-title, .chip .info-area .card .primary-text .chip-title, .card .tile .primary-text .tile-title, .tile .card .primary-text .tile-title, .card .primary-text .tile .rating-area i, .tile .rating-area .card .primary-text i, .card .primary-text #promise .divider .divider-text, #promise .divider .card .primary-text .divider-text, .card .primary-text #promise .promise span, #promise .promise .card .primary-text span, .card .buy-options .primary-text .product-subtitle, .buy-options .card .primary-text .product-subtitle, .card .primary-text .buy-options .product-rating-area i, .buy-options .product-rating-area .card .primary-text i {
       font-weight: 500;
       font-size: 1rem;
       line-height: normal;
@@ -3901,7 +3913,7 @@ li.three-line {
 .logo-carousel {
   background-color: #fafafa; }
   .logo-carousel .grid-list {
-    max-width: 1152px;
+    max-width: 1000px;
     margin: auto;
     background-color: transparent; }
     .logo-carousel .grid-list .cell {
@@ -4006,3 +4018,137 @@ RIPPLE EFFECT
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Products
+--------------------------------------------------------------*/
+#product-wrapper {
+  margin: 8px 0;
+  display: block; }
+  #product-wrapper .product-gallery {
+    margin: 0; }
+    #product-wrapper .product-gallery .image-list .image-selection {
+      opacity: .3; }
+      #product-wrapper .product-gallery .image-list .image-selection.displayed, #product-wrapper .product-gallery .image-list .image-selection:hover, #product-wrapper .product-gallery .image-list .image-selection:active, #product-wrapper .product-gallery .image-list .image-selection:focus {
+        opacity: 1; }
+    #product-wrapper .product-gallery .image-display .image-active {
+      width: 100%; }
+  #product-wrapper .buy-options {
+    margin: 0;
+    margin-top: 16px; }
+
+@media only screen and (min-width : 601px) {
+  #product-wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+    #product-wrapper .buy-options {
+      -webkit-box-flex: 1;
+      -webkit-flex: 1;
+          -ms-flex: 1;
+              flex: 1;
+      margin: 0; } }
+
+.buy-options {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1; }
+  .buy-options .product-info {
+    width: 24px;
+    position: absolute;
+    top: 16px;
+    right: 16px; }
+  .buy-options .primary-text {
+    padding: 8px 16px; }
+    .buy-options .primary-text .product-title {
+      font-weight: 700;
+      line-height: normal;
+      white-space: nowrap;
+      overflow: hidden !important;
+      text-overflow: ellipsis; }
+    .buy-options .primary-text .product-subtitle {
+      font-weight: 500;
+      line-height: normal;
+      white-space: nowrap;
+      overflow: hidden !important;
+      text-overflow: ellipsis; }
+    .buy-options .primary-text .product-stock {
+      padding: 0;
+      margin: 0; }
+  .buy-options .product-price-tag {
+    position: relative;
+    padding: 0 16px;
+    height: 32px;
+    max-height: 32px; }
+    .buy-options .product-price-tag .product-price {
+      display: inline-block;
+      color: #bc1d26;
+      font-weight: 700;
+      padding: 0;
+      margin: 0; }
+    .buy-options .product-price-tag .product-old-price {
+      display: inline-block;
+      padding: 0;
+      margin: 0;
+      margin-left: 16px;
+      text-decoration: line-through; }
+  .buy-options .product-rating-area {
+    width: 100%;
+    padding: 0 16px;
+    margin: 8px 0;
+    color: #ffffff; }
+    .buy-options .product-rating-area i {
+      color: #bc1d26; }
+    .buy-options .product-rating-area a {
+      position: relative;
+      display: block;
+      line-height: normal;
+      text-decoration: none; }
+  .buy-options .product-add-to-cart {
+    padding: 16px;
+    position: relative;
+    opacity: .87;
+    text-align: center; }
+    .buy-options .product-add-to-cart select {
+      position: relative;
+      background-color: rgba(0, 0, 0, 0.06);
+      border: none;
+      border-radius: 0;
+      outline: none;
+      min-width: 128px;
+      height: 32px;
+      line-height: 32px;
+      box-shadow: none;
+      box-sizing: border-box;
+      padding: 0 0 0 16px; }
+      .buy-options .product-add-to-cart select:focus {
+        outline: none; }
+    .buy-options .product-add-to-cart input {
+      position: relative;
+      background-color: rgba(0, 0, 0, 0.06);
+      border: none;
+      border-radius: 0;
+      outline: none;
+      max-width: 48px;
+      height: 32px;
+      line-height: 32px;
+      box-shadow: none;
+      box-sizing: border-box;
+      padding: 0 0 0 16px; }
+      .buy-options .product-add-to-cart input:focus {
+        outline: none; }
+    .buy-options .product-add-to-cart button {
+      margin: 0; }
+
+#description-wrapper ul {
+  margin: 8px 0;
+  background-color: #fff; }
+#description-wrapper p {
+  padding: 16px;
+  margin: 0; }
+
+#similar-products {
+  margin-bottom: 64px; }
+  #similar-products ul {
+    margin: 8px 0; }

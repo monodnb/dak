@@ -15,7 +15,7 @@
     .tile-info{
         width: 24px;
         position: absolute;
-        top:0;
+        top: $vertical-keyline;
         right: $vertical-keyline;
     }
     .primary-text {
@@ -31,7 +31,6 @@
         }
         .tile-subtitle {
             @extend .b1;
-            @extend .black54;
             line-height: normal;
             white-space: nowrap;
             overflow: hidden !important;

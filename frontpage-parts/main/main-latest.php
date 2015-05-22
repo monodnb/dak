@@ -137,7 +137,7 @@
             </div>
             <div class="primary-text">
                 <h1 class="tile-title">Sapca</h1>
-                <h2 class="subtitle">Nike WS Feather Light Visor</h2>
+                <h2 class="tile-subtitle">Nike WS Feather Light Visor</h2>
             </div>
             <div class="price-tag">
                 <p class="price">99,99 lei</p>
@@ -167,7 +167,7 @@
             </div>
             <div class="primary-text">
                 <h1 class="tile-title">Ochelari inot</h1>
-                <h2 class="subtitle">Puma swimming goggles</h2>
+                <h2 class="tile-subtitle">Puma swimming goggles</h2>
             </div>
             <div class="price-tag">
                 <p class="price">59.99 lei</p>
@@ -195,7 +195,7 @@
             </div>
             <div class="primary-text">
                 <h1 class="tile-title">Geanta</h1>
-                <h2 class="subtitle">Nike team training</h2>
+                <h2 class="tile-subtitle">Nike team training</h2>
             </div>
             <div class="price-tag">
                 <p class="price">69,99 lei</p>
@@ -225,7 +225,7 @@
             </div>
             <div class="primary-text">
                 <h1 class="tile-title">Pantaloni scurti</h1>
-                <h2 class="subtitle">Puma v-Konstrukt Shorts</h2>
+                <h2 class="tile-subtitle">Puma v-Konstrukt Shorts</h2>
             </div>
             <div class="price-tag">
                 <p class="price">49,99 lei</p>
